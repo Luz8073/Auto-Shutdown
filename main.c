@@ -71,7 +71,7 @@ int main(int argc, char *argv[]) {
             printf("\nDownload finished. Suspending system.\n");
             fflush(stdout);
             sleep(2);
-            system("systemctl suspend");
+            system("systemctl suspend"); //"systemctl poweroff" to shutdown fully
             break;
         }
     }
